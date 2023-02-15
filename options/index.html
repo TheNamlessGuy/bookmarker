@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+    <script src="../lib/helpers.js"></script>
+  </head>
+  <body>
+    <template id="entry-path-template">
+      <div class="entry-path-container">
+        <input class="entry-title" placeholder="Title">
+        <select class="entry-path-root">
+          <option value="toolbar_____">Toolbar</option>
+          <option value="menu________">Menu</option>
+        </select>
+        <input class="entry-path" placeholder="Path">
+        <span class="checkbox-container">
+          <input class="entry-default" type="checkbox">
+          <span>Default</span>
+        </span>
+        <button class="remove-entry-path-container-btn">Remove path</button>
+        <button class="entry-up-btn">↑</button>
+        <button class="entry-down-btn">↓</button>
+      </div>
+    </template>
+
+    <template id="entry-container-template">
+      <div class="entry-container">
+        <input class="entry-regex" placeholder="RegExp">
+        <input class="entry-parameters" placeholder="Parameters (CSV)">
+        <button class="entry-container-up-btn">↑</button>
+        <button class="entry-container-down-btn">↓</button>
+        <div class="entry-path-container-container"></div>
+        <button class="add-entry-path-container-btn">Add path</button>
+        <hr>
+      </div>
+    </template>
+
+    <div id="entries-container"></div>
+    <button id="add-new-entry">Add new entry</button>
+    <button id="save">Save</button>
+    <div class="import-export-button-container">
+      <button id="import">Import</button>
+      <button id="export">Export</button>
+    </div>
+  </body>
+</html>

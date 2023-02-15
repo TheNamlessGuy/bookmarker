@@ -1,0 +1,55 @@
+{
+  "manifest_version": 2,
+  "name": "Bookmarker",
+  "version": "0.5",
+  "description": "Bookmark tabs easier",
+  "author": "TheNamlessGuy",
+  "homepage_url": "https://github.com/TheNamlessGuy/bookmarker",
+  "developer": {
+    "name": "TheNamlessGuy",
+    "url": "https://github.com/TheNamlessGuy/bookmarker"
+  },
+
+  "icons": {
+    "16": "res/icons/not-favorited/16.png",
+    "19": "res/icons/not-favorited/19.png",
+    "32": "res/icons/not-favorited/32.png",
+    "38": "res/icons/not-favorited/38.png",
+    "48": "res/icons/not-favorited/48.png"
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "bookmarks",
+    "storage",
+    "unlimitedStorage"
+  ],
+
+  "page_action": {
+    "browser_style": true,
+    "default_icon": {
+      "16": "res/icons/not-favorited/16.png",
+      "19": "res/icons/not-favorited/19.png",
+      "32": "res/icons/not-favorited/32.png",
+      "38": "res/icons/not-favorited/38.png",
+      "48": "res/icons/not-favorited/48.png"
+    },
+    "default_title": "Bookmarker"
+  },
+
+  "background": {
+    "scripts": [
+      "lib/helpers.js",
+      "lib/icons.js",
+      "lib/bookmarks.js",
+
+      "background.js"
+    ]
+  },
+
+  "options_ui": {
+    "page": "options/index.html",
+    "browser_style": true
+  }
+}
